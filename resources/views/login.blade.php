@@ -13,7 +13,7 @@
             {{ session('error') }}
         </div>
     @endif
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('login.post') }}">
                         @csrf
                         <!-- Email -->
                         <div class="mb-3">

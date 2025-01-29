@@ -8,10 +8,10 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login'); // Muestra el formulario
-Route::post('/login', [AuthController::class, 'login'])->name('login.post'); // Valida el login
+Route::post('/login-post', [AuthController::class, 'login'])->name('login.post'); // Valida el login
 
 
-    Route::get('/students', [HomeController::class, 'estudiantes'])->name('students');
+Route::get('/user', [HomeController::class, 'index'])->name('user');
 
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
